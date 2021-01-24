@@ -1,23 +1,103 @@
-.flex-container {
-    position: relative;
-    font-family: 'Xanh Mono', monospace;
+body {
+    background-image: url('./images/low_contrast_linen.png');
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    padding-top: 90px;
+  }
+  
+  button {
+    margin: 2rem;    
+  }
+  
+  .navbar {
+    background-color: #73919b;  
+    color: #b6d7e2;  
+    padding-bottom: 0;
+    padding-left: 0;
+    border-bottom: solid;
+    border-bottom-color: #ccc;
+    width: 100%;
+  }
+  
+  #navbar-title {
+    padding: 15px;
+    font-size: 40px;
+    letter-spacing: 2px;
+    color: #fff !important;
+  }
+  
+  .container-fluid {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  
+  .nav-link {
+    text-decoration: none;
+   }
+  
+  .nav-link:hover {
+    background-color: #b6d7e2;  
+    color: #666;
+    border-radius: 6px;
+  }
+  
+  #details {
+    background-color: #b6d7e2;  
+    margin-top: 20px;
+    margin-bottom: 80px;
+    padding: 40px;
+    border-radius: 5px;
     text-align: center;
-    font-size: 1.3rem;
-    font-weight: bold;
+  } 
+   
+  
+  li {
+    height: 50px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 5px;
+    background-color: #897d9a;
+    color: #fff;
+    font-size: 1.5em;
+    line-height: 1.5;
+    list-style-type: none;
+  }
+  
+  li:hover {
+    background-color: whitesmoke;
     color: black;
-    padding-right: 2rem;
-    padding-left: 2rem;
-}
-
-h1 {
-    text-align: center;
-    color: green;
-    font-size: 3.5rem;
-    font-family: 'Xanh Mono', monospace;
-}
-
-#start {
-    border-radius: 3rem;
-    padding:.5in;
-    font-size: xx-large;
-}
+  }
+  
+  #answer-image {
+    float: left;
+    padding-right: 1em;
+    padding-top: 0.25em;
+  }
+  
+  #startQuiz{
+    
+  }
+  
+  .footer {
+    background-color: #666;
+    height: 10%;
+    border-top: solid;
+    border-top-color: #b6d7e2;  
+    border-top-width: 8px;
+  }
+  
+  /* media query for screen size to be applied to center text to switch at same time as navbar */
+  @media (max-width: 768px) {
+    .container-fluid {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  
+    li {
+      border-right: none;
+    }
+  
+    .nav-link{
+      padding: 1px;
+    }
+  }

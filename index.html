@@ -1,29 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Xanh+Mono&display=swap" rel="stylesheet">
-    
-</head>
-<body>
-    <h1>Coding Quiz</h1>
-    <div class="flex-container">
-        <p>Hello! Welcome to my coding quiz, it shouldn't be too difficult.. Here's how it works; you have 59 seconds to answer 5 questions, pretty simple. For every correct answer, you get 10 points, but, for every question you get wrong, 8 seconds is taken from your clock, rude..... READY? Hit the "Start Quiz" button below to get started!</p>
-        <button id="start">Start Quiz!</button>
-    <div id="quiz">
-    <div id="question"></div>
-    
-     </div>
-    </div>
-    
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
     
+    <title>Quiz</title>
+  </head>
+  <body>
+    <!-- Start header -->
+    <nav class="navbar navbar-expand-md fixed-top">
+      <div class="container-fluid">
+            <div id="highscore" class="nav-item nav-link"> View High Scores</div>
+            <h1 id="navbar-title">Coding Quiz</h1>
+            <table id=timers style="visibility: hidden;">
+              <tr>
+                <td> Time left in Game: </td>
+                <td> <span id="gameTimer" class="nav-item"></span> </td>
+              </tr>
+               <tr>
+                <td>Time left for Question:</td>
+                <td> <span id="quesTimer" class="nav-item"></span> </td>
+              </tr>
+            </table>
+        </div>
+      </div>
+    </nav>
+    <!-- end header -->
+    <!-- start Content -->
+    <div class="container-fluid">
+      <!-- need a place for the intro instructions and quiz -->
+      <section id="details"> </section>
+    </div>    
+  <!-- End Content -->
 
-    <script src="./script.js"></script>
-</body>
+  <!-- Start Footer -->
+    <nav class="navbar fixed-bottom footer">
+            </nav>
+  <!-- End Footer -->
+
+    <!-- read in file containing questions for quiz -->
+    <script src='./questions.js'></script>
+    <!-- read in javascript file  -->
+    <script src='./script.js'></script>
+  </body>
 </html>
